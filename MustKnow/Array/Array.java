@@ -1,18 +1,16 @@
 package MustKnow.Array;
 
-public class DynamicArray {
-    public class Array<E>{
+public class Array<E> {
+
         private int size; //数组中元素个数
         private E[] data; //数组声明
-    }
+
     //构造方法
     public void Array(int capacity){
         data = (E[]) new Object[capacity];
         int size = 0;
     }
-    public void Array(){
-        this(10);
-    }
+
     //基本方法
     public int getSize(){
         return size;
