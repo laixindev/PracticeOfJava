@@ -1,4 +1,5 @@
 package MustKnow.LinkedList;
+
 public class MyLinkedList<E> {
     private Node root = new Node();// 空节点
     private Node next;// 下一个节点
