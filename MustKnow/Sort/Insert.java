@@ -2,6 +2,7 @@ package MustKnow.Sort;
 
 public class Insert {
     public void insertionSort(int[] nums) {
+        //以第一个数为标准，从第二个数开始，从后往前看，后面的大数都后移一位，然后插入
         for (int i = 1; i < nums.length; i++) {
             int insertNum = nums[i];
             int insertIndex;
@@ -43,7 +44,7 @@ public class Insert {
     }
 
     // 插排的一种改进，记录按下标的一定增量分组，对每组进行插入排序，每次排序后减少增量，增量减少到1时，完成排序
-    //
+    // 就是给一个d=nums.length;d/=2;然后用d代替1的位置
     public void shellSort(int[] nums) {
         for (int d = nums.length / 2; d > 0; d /= 2) {
             for (int i = d; i < nums.length; i++) {
@@ -57,7 +58,7 @@ public class Insert {
 
         }
         for (int num : nums)
-            System.out.println("shell:" + num);
+            System.out.print("shell:" + num+" ");
     }
 
 
